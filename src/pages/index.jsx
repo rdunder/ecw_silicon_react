@@ -1,12 +1,22 @@
+import Navbar from "../components/navbar/Navbar";
+import Header from "../sections/header/header";
+import SectionFeatures from "../sections/features/features";
+
+import './index.css';
 
 
-
-function Index() {
-
+function Index({toggleDarkMode}) {
+    
 
     return (
-        <>
-            <h1>This is the index page</h1>
+        <>        
+        <header className="header">
+            <Navbar toggleDarkMode={toggleDarkMode} />
+            <Header />
+        </header>
+        <main>
+            <SectionFeatures />
+        </main>
         </>
     )
 }

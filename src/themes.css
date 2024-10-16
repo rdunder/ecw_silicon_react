@@ -1,0 +1,45 @@
+.clr-light {
+    --clr-primary-brand: var(--clr-primary);
+    --clr-header-bg: var(--header-gradient);
+    --clr-primary-bg: white;
+    --clr-seconday-bg: var(--gray-100);
+
+    --clr-text-heading: var(--gray-900); 
+    --clr-text-body: var(--gray-700);
+    --clr-text-link: var(--gray-800);
+
+    --clr-card-bg: white;
+    --clr-border-accordion: var(--gray-300);
+    --clr-text-input: var(--gray-500);
+    --clr-footer-text: var(--gray-600);
+
+    --clr-btn-appstore: var(--gray-900);
+    --clr-text-btn-appstore: var(--gray-100);
+
+    --clr-btn-mobile-menu: var(--gray-600);
+    --clr-btn-chevron: white;
+}
+
+.clr-dark {
+    --clr-primary-brand: var(--clr-primary);
+    --clr-header-bg: var(--header-gradient);
+    --clr-primary-bg: var(--gray-900);
+    --clr-seconday-bg: rgba(255, 255, 255, 0.04);
+
+    --clr-text-heading: white; 
+    --clr-text-body: rgba(255, 255, 255, 0.7);
+    --clr-text-link: rgba(255, 255, 255, 0.85);
+
+    --clr-card-bg: var(--clr-seconday-bg);
+    --clr-border-accordion: rgba(255, 255, 255, 0.15);
+    --clr-text-input: rgba(255, 255, 255, 0.4);
+    --clr-footer-text: rgba(255, 255, 255, 0.5);
+
+    --clr-btn-appstore: var(--gray-100);
+    --clr-text-btn-appstore: var(--gray-800);
+
+    --clr-btn-mobile-menu: var(--gray-100);
+    --clr-btn-chevron: rgba(255, 255, 255, 0.05);
+    
+    background-color: var(--clr-primary-bg);
+}    

@@ -1,0 +1,54 @@
+:root {
+    --gray-100: #F3F6FF;
+    --gray-200: #EFF2FC;
+    --gray-300: #E2E5F1;
+    --gray-400: #D4D7E5;
+    --gray-500: #B4B7C9;
+    --gray-600: #9397AD;
+    --gray-700: #565973;
+    --gray-800: #33354D;
+    --gray-900: #0B0F19;
+
+    --brand-primary: hsl(239, 84%, 66%);
+    --brand-primary-gradient: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
+    --header-gradient: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+    
+    --system-error: #EF4444;    
+    --system-success: #22C55E;
+    --system-warning: #FFBA08;
+    --system-info: #4C82F7;
+
+    --box-shadow-small: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    --boxshado-large: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.10), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    --box-shadow-brand-btn: 0px 8px 18px -8px rgba(99, 102, 241, 0.90);
+    --filter-drop-shadow: drop-shadow(0px 4px 9px rgba(19, 16, 34, 0.03)) drop-shadow(0px 4.4px 20px rgba(19, 16, 34, 0.05));
+    --box-shadow-secondary: 0px 8px 18px -8px rgba(19, 16, 34, 0.15);
+
+
+    /* Theme default colors */
+    --clr-primary-brand: var(--clr-primary);
+    --clr-header-bg: var(--header-gradient);
+    --clr-primary-bg: white;
+    --clr-seconday-bg: var(--gray-100);
+
+    --clr-text-heading: var(--gray-900); 
+    --clr-text-body: var(--gray-700);
+    --clr-text-link: var(--gray-800);  
+    
+    --clr-card-bg: white;
+    --clr-border-accordion: var(--gray-300);
+    --clr-text-input: var(--gray-500);
+    --clr-footer-text: var(--gray-600);
+
+    --clr-btn-appstore: var(--gray-900);
+    --clr-text-btn-appstore: var(--gray-100);
+
+    --clr-btn-mobile-menu: var(--gray-600);
+    --clr-btn-chevron: white;
+
+
+    /* Media Query breakpoints */
+    --mq-medium: 768px;
+    --mq-large: 1200px;
+    
+}

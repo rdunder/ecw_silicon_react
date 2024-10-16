@@ -3,7 +3,7 @@ import Index from "./pages/index";
 import Contact from "./pages/contact";
 
 
-function Rootes() {
+function MainRoutes() {
 
 
     return (
@@ -16,4 +16,4 @@ function Rootes() {
     )
 }
 
-export default Rootes;
+export default MainRoutes;

@@ -1,0 +1,134 @@
+.navbar {
+    /* Cant get the sticy to work so it looks nice */
+    /* position: sticky;
+    top: 0;
+    z-index: 5; */
+    
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    position: relative;
+    /* overflow: hidden; */
+
+    .header-top-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        h3 {
+            color: var(--clr-text-heading);
+            font-size: 1.28rem;
+            letter-spacing: 0.15rem;
+        }
+    }
+
+    .theme-toggle {
+        .label {
+            color: var(--clr-text-body);
+            display: none;
+        }
+    }
+
+    #auth-login {
+        display: none;
+    }
+
+    .btn-mobile {
+        color: var(--clr-btn-mobile-menu);
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--brand-primary);
+        }
+    }
+}
+
+
+@media (width < 1200px) {
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        height: 200px;
+        width: 300px;
+
+        font-size: 1.2rem;
+
+        background-color: var(--clr-primary-bg);
+        box-shadow: 0 5px 3px #00000030;
+        z-index: 5;
+        opacity: 1;
+
+        transition: all 500ms ease-out;
+    } 
+
+    nav.hidden {
+        top: -300px;
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        gap: 3rem;
+        .theme-toggle {
+            .label {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .navbar {
+        grid-template-columns: auto 1fr auto auto;
+    
+        nav {
+            position: relative;
+            display: flex;
+            gap: 1rem;
+        }
+    
+        #auth-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: var(--brand-primary);
+            color: #fff;
+            border-radius: 8px;
+            padding: 12px 25px;
+            text-decoration: none;
+            opacity: 1;
+            transition: opacity 0.4s;
+
+            i {
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: #dbe6ff;
+            }
+        }
+
+        .btn-mobile {
+            display: none;
+        }
+    }
+}
