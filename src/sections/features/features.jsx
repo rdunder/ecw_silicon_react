@@ -1,16 +1,56 @@
 
-
+//#region Import CSS and Assets
 import './features.css';
 
-import logo1 from './logo1.svg';
-import logo2 from './logo2.svg';
-import logo3 from './logo3.svg';
-import logo4 from './logo4.svg';
-import logo5 from './logo5.svg';
-import logo6 from './logo6.svg';
+import iphoneImg from './assets/iPhone12Pro.png';
+import logo1 from './assets/logo1.svg';
+import logo2 from './assets/logo2.svg';
+import logo3 from './assets/logo3.svg';
+import logo4 from './assets/logo4.svg';
+import logo5 from './assets/logo5.svg';
+import logo6 from './assets/logo6.svg';
+import featCashback from './assets/feat_cashback.svg';
+import featPayments from './assets/feat_payments.svg';
+import featSecurity from './assets/feat_security.svg';
+import featStandards from './assets/feat_standards.svg';
+import featStatistics from './assets/feat_statistics.svg';
+import featSupport from './assets/feat_support.svg';
+//#endregion
 
 function SectionFeatures() {
     const brandLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
+    const features = [
+        {
+            img: featPayments,
+            title: "Easy Payments",
+            content: "Id mollis consectetur congue egestas egestas suspendisse blandit justo."
+        },
+        {
+            img: featSecurity,
+            title: "Data Security",
+            content: "Id mollis consectetur congue egestas egestas suspendisse blandit justo."
+        },
+        {
+            img: featStatistics,
+            title: "Cost Statistics",
+            content: "Id mollis consectetur congue egestas egestas suspendisse blandit justo."
+        },
+        {
+            img: featSupport,
+            title: "Support 27/7",
+            content: "Id mollis consectetur congue egestas egestas suspendisse blandit justo."
+        },
+        {
+            img: featCashback,
+            title: "Regular Cashback",
+            content: "Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend."
+        },
+        {
+            img: featStandards,
+            title: "Top Standards",
+            content: "Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu."
+        },
+    ]
 
     return (
     <section className="section-features">
@@ -20,7 +60,9 @@ function SectionFeatures() {
                     <img src={logo} alt="logotype" />
                 </div>
             ))}
-
+{
+    //#region This code is replaced by the loop above
+}
             {/* <div className="logo">
                 <img src="./assets/p2 logo 1.svg" alt="logotype" />
             </div>
@@ -39,10 +81,13 @@ function SectionFeatures() {
             <div className="logo">
                 <img src="./assets/p2 logo 6.svg" alt="logotype" />
             </div> */}
+{
+    //#endregion
+}
         </div>
         <div id="Features" className="feature-large-container container">
             <div className="img-iphone">
-                <img src="./assets/p2 img iPhone 12 Pro.png" alt="graphical image of an iphone" />
+                <img src={iphoneImg} alt="graphical image of an iphone" />
             </div>
 
             <div>
@@ -52,7 +97,21 @@ function SectionFeatures() {
                 </div>
 
                 <div className="feature-container">
-                    <div className="feature">
+                    {features.map( feature => (
+                        <div key={feature.title} className="feature">
+                            <div className="ft-img">
+                                <img src={feature.img} aria-hidden="true"/>
+                            </div>
+                            <div>
+                                <h3>{feature.title}</h3>
+                                <p>{feature.content}</p>
+                            </div>    
+                        </div>
+                    ))}
+{
+    //#region This code is replaced by the loop above
+}
+                    {/* <div className="feature">
                         <div className="ft-img">
                             <img src="./assets/p2 logo easy payments.svg" aria-hidden="true" />
                         </div>
@@ -105,7 +164,11 @@ function SectionFeatures() {
                             <h3>Top Standards</h3>
                             <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
                         </div>
-                    </div>
+                    </div> */}
+{
+    //#endregion
+}
+
                 </div>
             </div>
         </div>

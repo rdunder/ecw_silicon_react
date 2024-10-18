@@ -105,6 +105,7 @@
     
         #auth-login {
             display: flex;
+            /* display: flex;
             align-items: center;
             justify-content: center;
 
@@ -125,7 +126,8 @@
                 cursor: pointer;
                 color: #dbe6ff;
             }
-        }
+            */
+        }        
 
         .btn-mobile {
             display: none;

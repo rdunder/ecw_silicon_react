@@ -1,0 +1,89 @@
+.section-how {
+    background-color: var(--clr-seconday-bg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    
+    h3 {
+        margin: 0 4rem;
+
+        &::before {
+            content: "Transfers to people from your contact list";
+        }
+    }
+
+    p {
+        margin: 1rem;
+    }
+
+    img {
+        height: 550px;
+        
+    }
+
+    .content-text {
+        max-width: 24rem;
+    }
+
+    .img-container {
+
+        img:nth-child(1), img:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section-how {
+        .img-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            width: 100%;
+
+            img:nth-child(1), img:nth-child(3) {
+                display: block;
+            }
+
+            img {
+                height: 410px;
+            }
+        }
+
+        .content-text {
+            max-width: 30rem;
+        }
+
+        h3::before {
+            content: "Step 3. Transfers to people from your contact list"
+        }
+
+         /* .p3-btxt {
+             max-width: 35rem;
+
+             span {
+                 display: inline;
+             }
+        } */
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-how {
+
+        .img-container {
+
+            img {
+                height: 640px;
+            }
+        }
+
+        h3::before {
+            content: "Latest transaction history";
+            font-size: 1.5rem;
+        }
+    }
+}
