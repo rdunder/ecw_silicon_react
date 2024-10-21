@@ -42,12 +42,15 @@
     
     h3 {
         font-size: 1rem;
+        text-align: left;
     }
     
     p {
         max-height: 0px;
         overflow: hidden;
         transition: all 500ms;
+        text-align: left;
+        font-size: 0.875rem;
     }
 
     .show {
