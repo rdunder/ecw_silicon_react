@@ -5,7 +5,7 @@ import './navbar.css';
 
 import mainLogo from './top-logo.svg';
 
-function Navbar({toggleDarkMode}) {
+function Navbar() {
     const [isMenuHidden, setIsMenuHidden] = useState(true);
 
     const showMenu = () => {
@@ -23,7 +23,7 @@ function Navbar({toggleDarkMode}) {
                 <a href="/contact">Contact</a>
             </nav>
             
-            <ThemeToggle toggleDarkMode={toggleDarkMode} />
+            <ThemeToggle />
             
             <a id="auth-login" className="btn-primary" href="#Subscribe">
                 <i className="fa-regular fa-user"></i>

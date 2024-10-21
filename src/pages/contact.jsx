@@ -1,12 +1,12 @@
 
 import Navbar from "../components/navbar/Navbar";
 
-function Contact({toggleDarkMode}) {
+function Contact() {
 
 
     return (
         <>
-            <Navbar toggleDarkMode={toggleDarkMode} />
+            <Navbar />
             <h1>This is the Contact page</h1>
         </>
     )

@@ -8,13 +8,13 @@ import SectionTestimonials from "../sections/testimonials/testimonials";
 import './index.css';
 
 
-function Index({toggleDarkMode}) {
+function Index() {
     
 
     return (
         <>        
         <header className="header">
-            <Navbar toggleDarkMode={toggleDarkMode} />
+            <Navbar />
             <Header />
         </header>
         <main>

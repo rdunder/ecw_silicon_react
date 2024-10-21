@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { ThemeContext } from './context/ThemeContext';
 
 import Index from "./pages/index";
 import Contact from "./pages/contact";
@@ -11,21 +12,14 @@ import './themes.css'
 import './App.css'
 
 function App() {
-  const [ isDarkMode, setIsDarkMode] = useState(false);
-
-  /**Function to handle theme toggling between dark and light
-   * 
-   */
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  }
+  const {isDarkMode} = useContext(ThemeContext);
 
   return (
     <div className={`${isDarkMode ? "clr-dark" : "clr-light"} app`}>
       <Router>
             <Routes>
-                <Route path="/" element={<Index toggleDarkMode={toggleDarkMode} />} />
-                <Route path="/contact" element={<Contact toggleDarkMode={toggleDarkMode} />} />
+                <Route path="/" element={< Index />} />
+                <Route path="/contact" element={< Contact />} />
             </Routes>
         </Router>
     </div>
