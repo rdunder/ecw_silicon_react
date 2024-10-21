@@ -35,8 +35,6 @@ function SectionTestimonials() {
                                     ?<i key={i} className="fa-solid fa-star"></i>
                                     :<i key={i} className="fa-regular fa-star"></i>
                                 ))}
-                                
-                                {/* <img src="./assets/p5 rating 1.svg" alt="visualisation of rating with stars" /> */}
                             </div>
                             <p>{testimonial.comment}</p>
                             <div className="client-avatar">
