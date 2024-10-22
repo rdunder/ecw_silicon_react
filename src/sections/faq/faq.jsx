@@ -20,22 +20,22 @@ function SectionFAQ() {
                 
                 <div className="contact-card-container">
                     <div className="contact-card card-1">
-                        <i class="fa-solid fa-phone-volume icon"></i>
+                        <i className="fa-solid fa-phone-volume icon"></i>
                         {/* <img src="./assets/p6 icon phone.svg" alt="graphical icon of a phone" /> */}
                         <p>Still have questions?</p>
                         <a href="#ContactUs">
                             Contact us
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i className="fa-solid fa-arrow-right"></i>
                             {/* <img src="./assets/p6 icon contact arrow.svg" aria-hidden="true" /> */}
                         </a>
                     </div>
                     <div className="contact-card card-2">
-                        <i class="fa-solid fa-comment-dots icon"></i>
+                        <i className="fa-solid fa-comment-dots icon"></i>
                         {/* <img src="./assets/p6 icon chat.svg" alt="graphical icon of a chat bubble" /> */}
                         <p>Don't like phonecalls?</p>
                         <a href="#ContactUs">
                             Contact us
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i className="fa-solid fa-arrow-right"></i>
                             {/* <img src="./assets/p6 icon green arrow.svg" aria-hidden="true" /> */}
                         </a>
                     </div>

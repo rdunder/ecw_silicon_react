@@ -4,8 +4,8 @@ import './footer.css';
 
 function Footer() {
   return (
-    <footer class="footer">
-        <div class="container">
+    <footer className="footer">
+        <div className="container">
             <p>© 2024 Silicon. All rights reserved.</p>
             <p>Credit MadrasThemes</p>
         </div>
