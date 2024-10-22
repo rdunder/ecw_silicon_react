@@ -1,0 +1,136 @@
+
+
+.section-contact-form {
+    background-color: var(--clr-seconday-bg);
+
+    .breadcrumb {
+        padding-block: 3rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 0.8rem;
+
+        p {
+            color: var(--brand-primary);
+            font-weight: 600;
+        }
+
+        a {
+            font-weight: 400;
+            color: var(--clr-footer-text);
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        i:nth-child(2) {
+            font-size: 0.5rem;
+        }
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .card {
+        display: flex;
+        gap: 1rem;
+
+        .icon {
+            align-self: flex-start;
+            padding: 0.5rem;
+            background-color: white;
+            border-radius: 50%;
+            color: var(--brand-primary);
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-block: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--brand-primary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+
+    }
+
+    .contact-form {
+        background-color: white;
+        padding: 3rem;
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.3);
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            margin: 1rem 0 0.3rem 0;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        input, select {
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+        }
+
+        button {
+            margin-top: 5rem;
+            border: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section-contact-form {
+    
+        .card-container {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-contact-form {
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .card-container {
+            flex-direction: column;
+        }
+
+        .contact-form {
+            margin-bottom: -5rem;
+        }
+    }
+}
