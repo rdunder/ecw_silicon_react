@@ -1,0 +1,24 @@
+.footer {        
+    padding: 3rem 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            font-size: 0.875rem;
+            color: var(--clr-footer-text);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        .container {
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+    }
+}

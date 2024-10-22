@@ -1,3 +1,6 @@
+
+import './index.css';
+
 import Navbar               from "../components/navbar/Navbar";
 import Header               from "../sections/header/header";
 import SectionFeatures      from "../sections/features/features";
@@ -5,8 +8,7 @@ import SectionWorkHow       from "../sections/workhow/workhow";
 import SectionTransfer      from "../sections/transfer/transfer";
 import SectionTestimonials  from "../sections/testimonials/testimonials";
 import SectionFAQ           from "../sections/faq/faq";
-
-import './index.css';
+import Footer               from "../sections/footer/footer";
 
 
 
@@ -24,6 +26,7 @@ function Index() {
             <SectionTestimonials />
             <SectionFAQ />
         </main>
+        <Footer />
         </>
     )
 }
