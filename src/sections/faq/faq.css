@@ -127,7 +127,7 @@
                 border-radius: 8px 0 0 8px;
                 outline: none;
                 background-color: var(--clr-card-bg);
-                color: var(--clr-text-input)
+                color: var(--clr-text-input);
             }
 
             button {
