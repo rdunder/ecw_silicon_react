@@ -75,6 +75,8 @@
 
     }
 
+/* 
+
     .contact-form {
         background-color: var(--clr-card-bg);
         padding: 3rem;
@@ -112,6 +114,9 @@
             padding: 1.2rem;
         }
     }
+ */
+
+
 }
 
 @media (min-width: 768px) {

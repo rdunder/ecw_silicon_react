@@ -1,5 +1,6 @@
 
 
+import ContactForm from '../../components/contactForm/contactForm';
 import './contactHeader.css';
 
 
@@ -44,7 +45,9 @@ function ContactHeader() {
             </div>
         </div>
 
-        <form className="contact-form">
+        <ContactForm />
+
+        {/* <form className="contact-form">
             <h2>Get Online Consultation</h2>
 
             <label htmlFor="name">Full Name</label>
@@ -65,8 +68,7 @@ function ContactHeader() {
             </select>
 
             <button className="btn-primary">Make an appointment</button>
-
-        </form>
+        </form> */}
 
     </div>
     </div>

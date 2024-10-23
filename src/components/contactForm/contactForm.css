@@ -1,0 +1,40 @@
+
+
+.contact-form {
+    background-color: var(--clr-card-bg);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.3);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+    
+    label {
+        margin: 1rem 0 0.3rem 0;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--clr-text-body);
+    }
+
+    input, select {
+        font-size: 1rem;
+        border: 0.5px solid var(--clr-border-accordion);
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+        background-color: var(--clr-card-bg);
+        color: var(--clr-text-body);
+    }
+
+    button {
+        margin-top: 7rem;
+        border: none;
+        padding: 1.2rem;
+    }
+}
+
