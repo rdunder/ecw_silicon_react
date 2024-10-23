@@ -1,7 +1,7 @@
 
 
 import Accordion from '../../components/accordion/accordion';
-import bell from './bell.svg';
+import SubscribeForm from '../../components/subscribeForm/subscribeForm';
 
 import './faq.css';
 
@@ -45,13 +45,15 @@ function SectionFAQ() {
 
             </div>
 
-            <div className="sub-container">
+            <SubscribeForm />
+
+            {/* <div className="sub-container">
                 <img src={bell} aria-hidden="true" />
                 <h2>Subscribe to our Newsletter</h2>
                 <form className="input-container">
                     <input type="text" placeholder=" &#xf003;  Your email" /><button id="Subscribe">Subscribe</button>
                 </form>
-            </div>
+            </div> */}
         </div>
 
     </section>
