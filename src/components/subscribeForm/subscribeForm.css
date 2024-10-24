@@ -22,6 +22,7 @@
     .input-container { 
         display: flex;
         margin-top: 1rem;
+        position: relative;
 
         input {
             flex-shrink: 2;
@@ -52,7 +53,22 @@
                 cursor: pointer;
             }
         }
-    }
+        
+        small {            
+            position: absolute;
+            bottom: -22px;
+            left: 5px;
+            font-size: 0.9rem;      
+        }
+
+        .feedback {
+            color: firebrick;
+        }
+
+        .success {
+            color: var(--system-success);
+        }
+    }    
 }
 
 @media (min-width: 768px) {

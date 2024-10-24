@@ -8,48 +8,27 @@ import bell from './bell.svg';
 function SubscribeForm() {
   const [email, setEmail] = useState("");
   const [feedback, setFeedback] = useState("");
+  const [success, setSuccess] = useState("");
   const URL = "https://win24-assignment.azurewebsites.net/api/forms/subscribe";
 
   function handleSubmit(e) {
     e.preventDefault();
+    setFeedback("");
+    setSuccess("");
+
     validateEmail(email) ? sendToApi(email) : setFeedback("You need to enter a valid email");
   }
 
-  async function sendToApi(str) {
-    setFeedback("");
+  async function sendToApi(str) {   
 
     const content = {
       email: str
     }
 
     await tryCallApiAsync(URL, 'POST', content) 
-      ? setFeedback(`The email ${str} was succesfully registered`) 
-      : setFeedback("Something went wrong with the connection");
+      ? setSuccess(`Thank you for registering!`) 
+      : setFeedback("Lost Connection! Please try again.");
     setEmail("");
-  }
-
-  function sendToApiThen(str) {
-    setFeedback("");
-
-    const content = {
-      email: str
-    }
-    
-    fetch(URL, {
-      method: 'POST',
-      headers: {
-        'accept': '*/*',
-        'content-type': 'application/json'
-      },
-      body: JSON.stringify(content)
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log(`${data} - ${typeof data}`)
-    })
-    .catch(err => {
-      console.log("There was an ERROR: " + err);
-    })
   }
 
   return (
@@ -64,8 +43,10 @@ function SubscribeForm() {
               onChange={ e => setEmail(e.target.value)} 
             />
             <button id="Subscribe">Subscribe</button>
+            <small className='feedback'>{feedback}</small>
+            <small className='success'>{success}</small>          
         </form>
-        <p>{feedback}</p>
+        
     </div>
   )
 }
