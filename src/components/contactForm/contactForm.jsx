@@ -1,8 +1,10 @@
-
+import { useState } from 'react';
+import { validateName, validateEmail } from '../../helpers/regex';
 
 import './contactForm.css';
 
 function ContactForm() {
+
 
     return (
         <form className="contact-form">

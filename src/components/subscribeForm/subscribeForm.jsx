@@ -11,28 +11,54 @@ function SubscribeForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    validateEmail(email) ? sendToApi(email) : setFeedback("You need to enter a valid email");
+    validateEmail(email) ? sendToApiAsync(email) : setFeedback("You need to enter a valid email");
   }
 
-  function sendToApi(str) {
+  async function sendToApiAsync(str) {
     setFeedback("");
+
+    const content = {
+      email: str
+    }
+
+    const res = await fetch(URL, {
+      method: 'POST',
+      headers: {
+        'accept': '*/*',
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(content)
+    });
+
+    res.status === 200 ? setFeedback(`The email ${str} was succesfully registered`) : setFeedback("Something went wrong with the connection");
+    setEmail("");
+
+    // const data = await res.json();
+    // console.log(data);
+  }
+
+  function sendToApiThen(str) {
+    setFeedback("");
+
+    const content = {
+      email: str
+    }
     
-    useEffect( () => {
-      fetch(URL, {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(str)
-      })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
-      })
-      .catch(err => {
-        console.log("There was an ERROR: " + err);
-      })
-    }, [])
+    fetch(URL, {
+      method: 'POST',
+      headers: {
+        'accept': '*/*',
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(content)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(`${data} - ${typeof data}`)
+    })
+    .catch(err => {
+      console.log("There was an ERROR: " + err);
+    })
   }
 
   return (
