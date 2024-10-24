@@ -22,6 +22,12 @@
         color: var(--clr-text-body);
     }
 
+    label::before {
+        content: "*";
+        margin-right: 0.2rem;
+        color: firebrick;
+    }
+
     input, select {
         font-size: 1rem;
         border: 0.5px solid var(--clr-border-accordion);
@@ -32,9 +38,26 @@
     }
 
     button {
-        margin-top: 7rem;
+        margin-top: 4rem;
         border: none;
         padding: 1.2rem;
+    }
+
+    small {
+        color: firebrick;
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+    }
+
+    small:last-of-type {
+        text-align: center;
+    }
+
+    p:last-of-type {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        color: cadetblue;
     }
 }
 

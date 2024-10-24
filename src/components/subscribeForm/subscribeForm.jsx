@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { validateEmail } from '../../helpers/regex';
+import { tryCallApiAsync } from '../../helpers/apiCalls';
 
 import './subscribeForm.css';
 import bell from './bell.svg';
@@ -11,30 +12,20 @@ function SubscribeForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    validateEmail(email) ? sendToApiAsync(email) : setFeedback("You need to enter a valid email");
+    validateEmail(email) ? sendToApi(email) : setFeedback("You need to enter a valid email");
   }
 
-  async function sendToApiAsync(str) {
+  async function sendToApi(str) {
     setFeedback("");
 
     const content = {
       email: str
     }
 
-    const res = await fetch(URL, {
-      method: 'POST',
-      headers: {
-        'accept': '*/*',
-        'content-type': 'application/json'
-      },
-      body: JSON.stringify(content)
-    });
-
-    res.status === 200 ? setFeedback(`The email ${str} was succesfully registered`) : setFeedback("Something went wrong with the connection");
+    await tryCallApiAsync(URL, 'POST', content) 
+      ? setFeedback(`The email ${str} was succesfully registered`) 
+      : setFeedback("Something went wrong with the connection");
     setEmail("");
-
-    // const data = await res.json();
-    // console.log(data);
   }
 
   function sendToApiThen(str) {

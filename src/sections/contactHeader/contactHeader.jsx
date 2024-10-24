@@ -8,8 +8,8 @@ function ContactHeader() {
   return (
     <div className='contact-header'>
     <div className="breadcrumb container">
-        <a href="/"><i class="fa-solid fa-house"></i>Homepage</a>
-        <i class="fa-solid fa-angles-right"></i>
+        <a href="/"><i className="fa-solid fa-house"></i>Homepage</a>
+        <i className="fa-solid fa-angles-right"></i>
         <p>Contact</p>
     </div>
     
