@@ -29,7 +29,7 @@ function Navbar() {
                 <i className="fa-regular fa-user"></i>
                 <span>Sign in / up</span>
             </a>
-            <button className="btn-mobile" onClick={showMenu}>
+            <button className={`btn-mobile ${!isMenuHidden ? "rotate" : ""}`}  onClick={showMenu}>
                 <i className="fa-solid fa-bars"></i>
             </button>
         </div>

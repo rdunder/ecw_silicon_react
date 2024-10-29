@@ -41,11 +41,16 @@
         background-color: transparent;
         border: none;
         font-size: 1.8rem;
+        transition: all 400ms;
 
         &:hover {
             cursor: pointer;
             color: var(--brand-primary);
         }
+    }
+
+    .btn-mobile.rotate {
+        rotate: 135deg;
     }
 }
 
@@ -71,7 +76,7 @@
         z-index: 5;
         opacity: 1;
 
-        transition: all 500ms ease-out;
+        transition: all 400ms ease-out;
     } 
 
     nav.hidden {
