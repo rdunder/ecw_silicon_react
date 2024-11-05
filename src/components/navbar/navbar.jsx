@@ -19,7 +19,7 @@ function Navbar() {
                 <h3>Silicon</h3>
             </a>
             <nav className={`${isMenuHidden ? "hidden" : ""}`}>
-                <a href="/">Features</a>
+                <a href="/#Features">Features</a>
                 <a href="/contact">Contact</a>
             </nav>
             

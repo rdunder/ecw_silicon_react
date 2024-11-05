@@ -20,3 +20,5 @@ function validatePhoneNumber(str) {
 
 
 export {validateEmail, validateName, validatePassword, validatePhoneNumber}
+
+
