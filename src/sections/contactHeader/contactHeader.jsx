@@ -1,5 +1,6 @@
 
 
+import Breadcrumb from '../../components/breadcrumb/breadcrumb';
 import ContactForm from '../../components/contactForm/contactForm';
 import './contactHeader.css';
 
@@ -7,11 +8,8 @@ import './contactHeader.css';
 function ContactHeader() {
   return (
     <div className='contact-header'>
-    <div className="breadcrumb container">
-        <a href="/"><i className="fa-solid fa-house"></i>Homepage</a>
-        <i className="fa-solid fa-angles-right"></i>
-        <p>Contact</p>
-    </div>
+
+    <Breadcrumb />
     
     <div className="container contact-container">                  
 

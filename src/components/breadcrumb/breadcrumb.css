@@ -1,0 +1,25 @@
+.breadcrumb {
+    padding-block: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.8rem;
+
+    p {
+        color: var(--brand-primary);
+        font-weight: 600;
+    }
+
+    a {
+        font-weight: 400;
+        color: var(--clr-footer-text);
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    i:nth-child(2) {
+        font-size: 0.5rem;
+        color: var(--clr-footer-text);
+    }
+}
