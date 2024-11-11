@@ -30,7 +30,7 @@ function SectionTestimonials() {
                     testimonials.map( testimonial => (
                         <div key={testimonial.author} className="card">
                             <div className="rating">
-                                {[...Array(5)].map( (x, i) => (
+                                {[...Array(5)].map( (x, i) => ( // Denna lösning kom jag på själv, inget AI till hjälp
                                     i < testimonial.starRating 
                                     ?<i key={i} className="fa-solid fa-star"></i>
                                     :<i key={i} className="fa-regular fa-star"></i>

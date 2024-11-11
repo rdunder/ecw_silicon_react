@@ -1,3 +1,6 @@
+// helper funktion för att skicka formulär
+// genom att returnera true eller false så kan jag enkelt sätta en feedback på formuläret.
+
 
 /**
  * This async function makes a fetch request and returns a bolean depending on the response code

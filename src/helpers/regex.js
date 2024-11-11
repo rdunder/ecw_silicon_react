@@ -1,3 +1,5 @@
+// Jag beslutade att göra "helpers" för att dessa skulle användas på fler än 1 plats
+// detta hade säkert kunnat göras på ett mer "react" mässigt sätt, men de fungerar och föenklar koden en del där de används.
 
 function validateEmail(str) {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
